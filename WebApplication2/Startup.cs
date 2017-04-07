@@ -42,7 +42,7 @@ namespace WebApplication2
                 },
                 a =>
                 {
-                    app.Use(async (c, next) =>
+                    a.Use(async (c, next) =>
                     {
                         if (c.Request.Path.ToString().Contains("foo"))
                         {
